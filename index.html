@@ -1,181 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta content="David J.W. Holmes" name="title">
-    <meta content="David is an up and coming web developer based in Melbourne, Australia." name="description">
-    <meta name="thumbnail" content="https://www.davidjwholmes.com/assets/mainimg.jpg" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta content="David J.W. Holmes" name="title" />
+    <meta
+      content="Software Engineer | React | Node | Go | Python | AWS | GCP | Serverless"
+      name="description"
+    />
+    <meta
+      name="thumbnail"
+      content="https://www.davidjwholmes.com/assets/mainimg.jpg"
+    />
 
-    <meta itemprop="name" content="David J.W. Holmes">
-    <meta itemprop="description" content="David is an up and coming web developer based in Melbourne, Australia.">
-    <meta itemprop="image" content="https://www.davidjwholmes.com/assets/mainimg.jpg">
+    <meta itemprop="name" content="David J.W. Holmes" />
+    <meta
+      itemprop="description"
+      content="Software Engineer | React | Node | Go | Python | AWS | GCP | Serverless"
+    />
+    <meta
+      itemprop="image"
+      content="https://www.davidjwholmes.com/assets/mainimg.jpg"
+    />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@dholmes0712">
-    <meta name="twitter:title" content="David J.W. Holmes">
-    <meta name="twitter:description" content="David is an up and coming web developer based in Melbourne, Australia.">
-    <meta name="twitter:image" content="https://www.davidjwholmes.com/assets/mainimg.jpg">
-    <meta name="twitter:url" content="https://www.davidjwholmes.com">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@dholmes0712" />
+    <meta name="twitter:title" content="David J.W. Holmes" />
+    <meta
+      name="twitter:description"
+      content="Software Engineer | React | Node | Go | Python | AWS | GCP | Serverless"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.davidjwholmes.com/assets/mainimg.jpg"
+    />
+    <meta name="twitter:url" content="https://www.davidjwholmes.com" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="David J.W. Holmes">
-    <meta property="og:description" content="David is an up and coming web developer based in Melbourne, Australia.">
-    <meta property="og:url" content="https://www.davidjwholmes.com">
-    <meta property="og:image" content="https://www.davidjwholmes.com/assets/mainimg.jpg">
-    <meta property="og:site_name" content="David J.W. Holmes">
-    <meta property="og:locale" content="en_AU">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="David J.W. Holmes" />
+    <meta
+      property="og:description"
+      content="Software Engineer | React | Node | Go | Python | AWS | GCP | Serverless"
+    />
+    <meta property="og:url" content="https://www.davidjwholmes.com" />
+    <meta
+      property="og:image"
+      content="https://www.davidjwholmes.com/assets/mainimg.jpg"
+    />
+    <meta property="og:site_name" content="David J.W. Holmes" />
+    <meta property="og:locale" content="en_AU" />
 
-    <title>David J.W. Holmes - Web Developer</title>
-    <link rel="stylesheet" href="/dest/style.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-</head>
-<body>
-  <nav role="navigation">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#projects">Projects</a></li>
-    </ul>
-  </nav>
-  
-  <main role="main" class="app">
-    
-    <section id="home">
-      <header class="header">
+    <title>David J.W. Holmes - Software Engineer</title>
+    <link rel="stylesheet" href="/dest/style.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main role="main" class="app">
+      <section id="home">
+        <header class="header">
           <h1>David J.W. Holmes</h1>
-          <h2>Web Developer</h2>      
-      </header>
-      <div class="container-main">
-        <img class="main-image" src="assets/mainimg.jpg" alt="Main Image">
-        <p>Days Until Graduation:</p>
-        <!-- Display the countdown timer in an element -->
-         <p id="demo"></p>
-            
-          <script>
-          // Set the date we're counting down to
-          var countDownDate = new Date("Mar 2, 2018 00:00:00").getTime();
-
-          // Update the count down every 1 second
-          var x = setInterval(function() {
-
-            // Get todays date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now an the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
-            + minutes + " minutes " + seconds + " seconds ";
-
-            // If the count down is finished, write some text 
-            if (distance < 0) {
-              clearInterval(x);
-              document.getElementById("demo").innerHTML = "Graduated!";
-            }
-          }, 1000);
-          
-          </script>     
-      </div>
-    </section>
-
-    <section id="about">
-      <header class="header">
-        <h1>About Me</h1>
-      </header>
-      <div class="container">
-        <div class="backing">
-          <p>Hi, my name is David Holmes.</p>
-          <p>I was born and raised in Melbourne, and it's where I live and operate from to this day.</p>
-          <p>At the age of 22, I decided that academia wasn't the direction I wanted to head in and embarked instead on a journey to learn to code by enrolling in the <a href="https://coderacademy.edu.au/fast-track" target="_blank">Coder Academy Fast Track Developer bootcamp</a>.</p></p>
-          <p>This website, while still a work in progress, is a testament to the high level of practical knowledge and ability imparted by the instructors at the Academy.</p>
-          <p>While I do love to code, I also have a very broad variety of other areas of interest, including philosophy, psychology, literature, physics, mathematics, nutrition and exercise... There are too many to list.</p>
-          <p>If you are as curious about me or my work as I am about the world, please don't hesitate to contact me by clicking <a href="#contact">here</a>.</p>
+          <h2>Software Engineer</h2>
+        </header>
+        <div class="container-main">
+          Coming soon...
         </div>
-      </div>
-    </section>
-    
-    <section id="resume">
-      <header class="header">
-        <h1>Resume</h1>
-      </header>
-      <div class="container">
-        <h1>Profile</h1>
-        <p>A recent newcomer to the web development world and current student at Coder Academy, Melbourne campus.
-          Passionate, hard working and willing to apply myself in a team. Enjoys people and has good social/communication ability.
-          An exceptionally fast learner and always up for a technical challenge, but also enjoys the creative side of things.
-          Gets a thrill out of solving hard problems. Punctual + Organised. </p>
-        <h1>Developer Knowledge</h1>
-        <p>React, Mongodb, SQL, Javascript, Ruby + Rails, Express.JS, HTML5, CSS3 + 4, SASS/SCSS/postCSS, Figma, Trello, Git, Heroku, Netlify</p>
-        <h1>Experience</h1>
-        <p><strong>Tutor</strong> <em>Self Employed</em></p>
-        <p>- Tutored highschool, TAFE and university students in science and mathematics.</p>
-        <em>(2011 - 2017)</em>
-        <p><strong>Lab Technician Internship</strong> <em>Christian Brothers College, St Kilda</em></p>
-        <p>- Organised and maintained laboratory stock, gave laboratory demonstrations, handled dangerous goods and complied with OH&S regulations.</p>
-        <em>(January 2016 - September 2016)</em>
-        <p><strong>Berwick Soup Van Volunteer</strong> <em>St Vincent de Paul Society</em></p>
-        <p>- Volunteer as part of a team to supply food to those in need via a mobile soup kitchen.</p>
-        <em>(Since 2014)</em>
-        <p><strong>Casual Staff Member</strong> <em>Campion Education</em></p>
-        <p>- Role involved general retail and warehouse duties, picking and packing, customer service interfacing, cataloguing items and handling cash.</p>
-        <em>(December 2012 - December 2013)</em>
-        <h1>Education</h1>
-        <p><strong>Diploma of I.T. - Fast Track Developer Bootcamp</strong> @ Coder Academy, Melbourne Campus <em>(est. early 2018)</em></p>
-        <p><strong>Studied Bachelor of Science (Physics, Mathematics and CS)</strong> @ Swinburne University of Technology, Hawthorne Campus <em>(2015 - 2017)</em></p>
-        <p><strong>Completed Year 12 VCE</strong> @ Kambrya College, Berwick Campus <em>(2012)</em></p>
-        
-      </div>
-    </section>
-    
-    <section id="contact">
-      <header class="header">
-        <h1>Contact</h1>
-      </header>
-      <div class="container">
-          <form name="contact" action="thank-you" netlify>
-                <input type="text" name="name" placeholder="NAME">  
-                <input type="email" name="email" placeholder="EMAIL">
-                <textarea name="message" placeholder="MESSAGE"></textarea>
-                <p><button type="submit">SEND MESSAGE</button></p>
-          </form>
-      </div>
-    </section>
-    
-    <section id="projects">
-      <header class="header">
-        <h1>Projects</h1>
-      </header>
-      <div class="container">
-        <h1>More Coming Soon...</h1>
-        <h1>Star Wars Text Adventure - Ruby Terminal App</h1>
-        <p>The user plays as the bounty hunter Boba Fett through a series of Star Wars inspired scenes in which they can choose an action to perform by typing in the terminal.</p>
-        <img class="screenshot" src="assets/screenshot1.jpg" alt="Screenshot1">       
-        <p><img class="screenshot" src="assets/screenshot2.jpg" alt="Screenshot2"> </p>      
-        <p><img class="screenshot" src="assets/screenshot3.jpg" alt="Screenshot3"> </p>          
-      </div>
-    </section>
-  </main>
-
-  <nav role="navigation">
-    <ul>
-      <li><a target="_blank" href="https://www.facebook.com/david.holmes.967422">Facebook</a></li>
-      <li><a target="_blank" href="https://twitter.com/dholmes0712?lang=en">Twitter</a></li>
-      <li><a target="_blank" href="https://www.instagram.com/djwholmes/">Instagram</a></li>
-      <li><a target="_blank" href="https://github.com/DavidJWHolmes">Github</a></li>
-      <li><a target="_blank" href="https://codepen.io/davidholmes/">Codepen</a></li>
-      <li><a target="_blank" href="https://www.linkedin.com/in/david-holmes-907728149/">Linkedin</a></li>    
-    </ul>
-  </nav>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
